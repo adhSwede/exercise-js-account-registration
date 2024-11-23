@@ -1,0 +1,93 @@
+:root {
+  font-family: "Roboto";
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: dashed grey 1px;
+  padding: 1.5rem;
+}
+
+h1 {
+  color: #fff;
+  text-transform: lowercase;
+  padding: 0.3rem;
+}
+
+.orange-rect {
+  background-color: #f8981d;
+  color: #000;
+  border-radius: 5px;
+  padding: 0.3rem;
+}
+
+.input-form {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #fff;
+}
+
+label {
+  position: relative;
+  top: 1.1rem;
+  left: 0.5rem;
+  text-shadow: -3px -3px 3px #000, 3px -3px 3px #000, -3px 3px 3px #000,
+    3px 3px 3px #000;
+}
+
+input {
+  align-self: center;
+  height: 2.5rem;
+  width: 100%;
+  background-color: #000;
+  border: solid rgba(255, 255, 255, 0.7) 2px;
+  color: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  outline: none; /* Remove default outline for a cleaner look */
+  transition: border-color 0.2s ease-in-out; /* Smooth border transition */
+}
+
+/* Focus Styling */
+input:focus {
+  border-color: #f8981d; /* Highlight border on focus */
+}
+
+/* Validation Borders */
+input.red-border {
+  border: solid 2px darkred; /* Invalid password border */
+}
+
+input.green-border {
+  border: solid 2px darkgreen; /* Valid password border */
+}
+
+.submit-btn {
+  margin-top: 1rem;
+  border: none;
+  background-color: rgba(248, 152, 29, 0.8);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-btn:disabled {
+  background-color: rgba(248, 152, 29, 0.4);
+  cursor: not-allowed;
+}
